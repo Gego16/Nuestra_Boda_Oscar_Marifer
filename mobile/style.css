@@ -1,0 +1,423 @@
+    /*font-family: 'Forum', cursive;
+    font-family: 'Pinyon Script', cursive; */
+:root{
+    --dorado: #D4AF37;
+    
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+html{
+    font-size: 62.5%;
+    background-image: url("./imagenes/fondo.jpg");
+}
+header{
+    min-width: 320px;
+    width: auto;
+    height: auto;
+}
+.presentacion{
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    min-width: 320px;
+    width: 370px;
+    height: auto;
+}
+.presentacion h3{
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'pinyon Script', cursive;
+    font-size: 2rem;
+    color: black;
+    text-align: center;
+}
+.imagen-fondo{ 
+    min-width: 320px;
+    max-width: 100%;
+    height: 100%;
+}
+.border-title{
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    min-width: 320px;
+    width: 370px;
+    height: auto;
+    border: 0.5rem solid var(--dorado);
+}
+.titulo1{
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'pinyon Script', cursive;
+    font-size: 5rem;
+    color: var(--dorado);
+}
+.titulo{
+    text-align: center;
+    font-family: 'pinyon Script', cursive;
+    font-size: 5.5rem;
+    color: var(--dorado); 
+}
+.border-title .dia{
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Forum',cursive;
+    font-weight: 400;
+    font-size: 4rem;
+}
+.border-title .fecha {
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'pinyon Script', cursive;
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--dorado); 
+}
+.border-title .frase {
+    margin-top: 20px;
+    padding: 0 10px;
+    text-align: center;
+    font-family: 'pinyon Script', cursive;
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--dorado); 
+}
+main{
+    min-width: 320px;
+    width: 370px;
+    height: auto;
+
+}
+.body{
+    display: grid;
+    place-items: start;
+}
+.container{
+    width: 370px;
+    min-width: 320px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+.countdown{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.countdown div{
+    display: grid;
+    place-items: center ;
+    padding: 5px;
+}
+.body .container h2{
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'pinyon Script', cursive;
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--dorado); 
+    margin-left: 60px;
+}
+
+.body .container p{
+    display: grid;
+    place-items: center;
+    border: solid 0.3rem var(--dorado);
+    height: 50px;
+    width: 50px;
+    font-size: 2rem;
+    font-family: 'Forum';
+    font-weight: 400;
+}
+.body .container .countdown span{
+    font-family: 'Forum',cursive;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.ubicacion{
+    min-width: 320px;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.ubicacion .donde{
+    font-size: 4rem;
+    font-weight: 400;
+    font-family: 'Forum',cursive;
+    text-align: center;
+}
+
+.contenedor-ubicacion{
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    min-width: 320px;
+    width: 370px;
+    height: auto;
+    border: 0.5rem solid var(--dorado);
+    margin-bottom: 10px;
+}
+
+.contenedor-ubicacion .ceremonia{
+    font-size: 4rem;
+    font-weight: 600;
+    font-family: 'Pinyon Script', cursive;
+    color: var(--dorado);
+    text-align: center;
+
+}
+.contenedor-ubicacion .horario{
+    font-size: 4rem;
+    font-family: 'Forum', cursive;
+    text-align: center;
+    font-weight: 400;
+}
+
+.carrusel {
+    display: flex;
+    overflow: hidden;
+    max-width: 100%;
+    position: relative;
+}
+
+.imagen-salon {
+    width: 95%;
+    height: auto;
+    display: none;
+    margin-left: 10px;
+}
+
+.imagen-salon.active {
+    display: block;
+}
+
+.contenedor-ubicacion .title{
+    margin-top: 10px;
+    font-size: 4rem;
+    font-weight: 600;
+    font-family: 'Pinyon Script', cursive;
+    color: var(--dorado);
+    text-align: center;
+}
+.contenedor-ubicacion .hora{
+    font-size: 4rem;
+    font-weight: 400;
+    font-family: 'Forum',cursive;
+    text-align: center;
+}
+.contenedor-ubicacion .direccion{
+    font-size: 3rem;
+    font-weight: 400;
+    font-family: 'Forum',cursive;
+    text-align: center;
+}
+
+.contenedor-ubicacion .maps{
+    margin-top: 10px;
+    display: block;
+    padding: 8px;
+    width: 200px;
+    height: 48px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 2.5rem;
+    font-family: 'Forum',cursive;
+    font-weight: 400;
+    text-decoration: none;
+    border: 0.5rem solid var(--dorado);
+    margin-left: 74px;
+    color: black;
+}
+
+.contenedor-padres{
+    min-width: 320px;
+    width: 370px;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 0.5rem solid var(--dorado)
+}
+
+.contenedor-padres .familia {
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'pinyon Script', cursive;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-top: 15px;
+    color: var(--dorado);
+}
+
+.contenedor-padres p{
+    margin-bottom: 10px;
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: 'Forum',cursive;
+    text-align: center;
+}
+
+.vestimenta{
+    min-width: 320px;
+    width: 370px;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.vestimenta h3{
+    font-size: 4rem;
+    font-weight: 600;
+    font-family: 'Pinyon Script', cursive;
+    color: var(--dorado);
+    text-align: center;
+}
+
+.vestimenta p{
+    font-size: 4rem;
+    font-weight: 400;
+    font-family: 'Forum',cursive;
+    text-align: center;
+}
+
+.contenedor-regalos{
+    min-width: 320px;
+    width: 370px;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 0.5rem solid var(--dorado);
+}
+.contenedor-regalos h2{
+    font-size: 4rem;
+    font-weight: 600;
+    font-family: 'Pinyon Script', cursive;
+    color: var(--dorado);
+    text-align: center;
+}
+.contenedor-regalos .mensaje{
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: 'Forum',cursive;
+    text-align: center;
+    padding: 10px;
+}
+.contenedor-bbva .imagen-bbva{
+    width: 100px;
+    height: auto;
+    color: black;
+    margin-left: 140px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.contenedor-regalos p{
+    margin-top: 5px;
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: 'Forum',cursive;
+    text-align: center;
+    padding: 5px;
+}
+
+.contenedor-liverpool .imagen-liverpool{
+    width: 180px;
+    height: auto;
+    color: black;
+    margin-left: 100px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.contenedor-regalos a{
+    margin-top: 10px;
+    display: block;
+    padding: 8px;
+    width: 180px;
+    height: 48px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 2.5rem;
+    font-family: 'Forum',cursive;
+    font-weight: 400;
+    text-decoration: none;
+    border: 0.5rem solid var(--dorado);
+    margin-left: 98px;
+    color: black;
+}
+
+.contenedor-amazon .imagen-amazon{
+    width: 180px;
+    height: auto;
+    color: black;
+    margin-left: 100px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+footer {
+    min-width: 320px;
+    width: 370px;
+    height: auto;
+}
+
+footer p{
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Forum', cursive;
+    font-size: 2rem;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    font-family: 400;
+}
+
+footer .form{
+    width: 370px;
+}
+
+.confirmacion{
+    min-width: 320px;
+    width: 370px;
+    height: 1300px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.confirmacion h2{
+    font-size: 4rem;
+    font-weight: 600;
+    font-family: 'Pinyon Script', cursive;
+    color: var(--dorado);
+    text-align: center;
+}
+
+.form{
+    min-width: 320px;
+    width: 370px; 
+}
+
+.cancion{
+    margin-top: 20px;
+    margin-left: 35px;
+}
+
+
+
+
+
+
+
+
+
+

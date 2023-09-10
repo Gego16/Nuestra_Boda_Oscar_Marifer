@@ -1,0 +1,127 @@
+.page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: max-content;
+    margin: 0 auto;
+    min-width: 320px;
+}
+  
+.grid-container {
+        display: grid;
+        grid-template-columns: auto 1fr; /* Divide la pantalla en dos columnas */
+        align-items: center; /* Centra verticalmente el contenido */
+        height: 100vh; /* Ajusta la altura al 100% de la ventana del navegador */
+        margin: 0; /* Elimina márgenes predeterminados */
+        padding: 0; /* Elimina relleno predeterminado */
+}
+
+.border-title {
+    margin-left: -164px;
+    margin-right: 10px; /* Estilos para border-title */
+}
+
+.contenedor-padres {
+    position: static;
+    margin-right: 10px;
+    border: 0.5rem solid var(--dorado);
+}
+.contenedor-padres .familia{
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'pinyon Script', cursive;
+    font-size: 5rem;
+    color: var(--dorado);
+}
+.contenedor-padres p{
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Forum',cursive;
+    font-weight: 400;
+    font-size: 2.6rem;
+}
+
+.container{
+    margin-top: 64px;
+    width: max-content;
+}
+
+.body .container h2 {
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'pinyon Script', cursive;
+    font-size: 5rem;
+    color: var(--dorado);
+    margin-left: 0;
+    
+}
+  
+.presentacion{
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    min-width: 800px;
+    width: 100%;
+    height: auto;
+}
+.presentacion h3{
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'pinyon Script', cursive;
+    font-size: 3rem;
+    color: black;
+    text-align: center;
+}
+
+.ubicacion {
+    display: block;
+    margin-left: -178px;
+}
+
+.contenedor-regalos {
+    position: absolute;
+    margin-top: -745px;
+    margin-left: 230px;
+}
+
+.vestimenta {
+    position: absolute;
+    width: max-content;
+}
+
+.vestimenta h3{
+    font-size: 5rem;
+}
+
+footer{
+    margin-top: 130px;
+    min-width: 320px;
+    width: auto;
+    height: auto;
+}
+
+footer p{
+    margin-top: -8px;
+    font-weight: bold;
+    font-size: 3rem;
+    color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+.confirmacion{
+    width: 800px;
+    height: auto;
+}
+
+.confirmacion h2{
+    font-size: 5rems;
+    margin-left: 153px;
+}
+
+footer .form{
+    width: inherit;
+    margin-left: 67px;
+}
